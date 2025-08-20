@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Rags Perfumes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="shop-header">
+        <div class="header-overlay"></div>
+        <nav class="navbar">
+            <div class="logo">RAGS<span>PERFUMES</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart-icon" id="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </li>
+            </ul>
+        </nav>
+        <div class="shop-header-content">
+            <h1>Our Fragrance Collection</h1>
+            <p>Find your perfect scent from our curated selection</p>
+        </div>
+    </header>
+
+    <!-- Shop Filters -->
+    <section class="shop-filters">
+        <div class="filter-container">
+            <div class="filter-group">
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="all">All Perfumes</option>
+                    <option value="women">Women's Fragrances</option>
+                    <option value="men">Men's Fragrances</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="price">Price Range:</label>
+                <select id="price">
+                    <option value="all">All Prices</option>
+                    <option value="low">Under $50</option>
+                    <option value="medium">$50 - $100</option>
+                    <option value="high">Over $100</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="scent">Scent Type:</label>
+                <select id="scent">
+                    <option value="all">All Scents</option>
+                    <option value="floral">Floral</option>
+                    <option value="woody">Woody</option>
+                    <option value="fresh">Fresh</option>
+                    <option value="oriental">Oriental</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="product-grid-section">
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card" data-id="1" data-category="women" data-price="94.99" data-scent="floral">
+                <div class="product-badge">Bestseller</div>
+                <div class="product-img">
+                    <img src="perfume16.webp" alt="Midnight Rose">
+                </div>
+                <div class="product-info">
+                    <h3>Midnight Rose</h3>
+                    <span class="brand">Rags Perfumes</span>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(124)</span>
+                    </div>
+                    <div class="price">$94.99 <span class="old-price">$109.99</span></div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card" data-id="2" data-category="women" data-price="80.99" data-scent="floral">
+                <div class="product-badge">Bestseller</div>
+                <div class="product-img">
+                    <img src="bg28.jpg" alt="MG Chanel">
+                </div>
+                <div class="product-info">
+                    <h3>MG Chanel</h3>
+                    <span class="brand">Rags Perfumes</span>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(124)</span>
+                    </div>
+                    <div class="price">$80.99 <span class="old-price">$99.99</span></div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card" data-id="3" data-category="men" data-price="67.99" data-scent="woody">
+                <div class="product-badge">Bestseller</div>
+                <div class="product-img">
+                    <img src="perfume.webp" alt="Signature">
+                </div>
+                <div class="product-info">
+                    <h3>Signature</h3>
+                    <span class="brand">Rags Perfumes</span>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(124)</span>
+                    </div>
+                    <div class="price">$67.99 <span class="old-price">$89.99</span></div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product-card" data-id="4" data-category="men" data-price="101.99" data-scent="oriental">
+                <div class="product-badge">Bestseller</div>
+                <div class="product-img">
+                    <img src="bg30.webp" alt="Cordial">
+                </div>
+                <div class="product-info">
+                    <h3>Cordial</h3>
+                    <span class="brand">Rags Perfumes</span>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(124)</span>
+                    </div>
+                    <div class="price">$101.99 <span class="old-price">$200.99</span></div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="overlay" id="overlay"></div>
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-total" id="cart-total">
+            Total: $0.00
+        </div>
+        <button class="checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Rags Perfumes</h3>
+                <p>Creating unforgettable fragrances since 2010.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">All Fragrances</a></li>
+                    <li><a href="#">Women's Perfumes</a></li>
+                    <li><a href="#">Men's Colognes</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Visit Us</h3>
+                <address>
+                    123 Fragrance Avenue<br>
+                    Paris, France 75001<br>
+                    <br>
+                    Phone: +1 (555) 123-4567<br>
+                    Email: info@ragsperfumes.com
+                </address>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Rags Perfumes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cart = [];
+            const cartIcon = document.getElementById('cart-icon');
+            const cartModal = document.getElementById('cart-modal');
+            const overlay = document.getElementById('overlay');
+            const closeCart = document.getElementById('close-cart');
+            const cartItemsContainer = document.getElementById('cart-items');
+            const cartTotal = document.getElementById('cart-total');
+            const checkoutBtn = document.getElementById('checkout-btn');
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            const filterSelects = document.querySelectorAll('.filter-container select');
+            
+            // Toggle cart modal
+            cartIcon.addEventListener('click', toggleCart);
+            closeCart.addEventListener('click', toggleCart);
+            overlay.addEventListener('click', toggleCart);
+            
+            // Add to cart functionality
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', addToCart);
+            });
+            
+            // Filter functionality
+            filterSelects.forEach(select => {
+                select.addEventListener('change', filterProducts);
+            });
+            
+            // Checkout button
+            checkoutBtn.addEventListener('click', proceedToCheckout);
+            
+            function toggleCart() {
+                cartModal.classList.toggle('active');
+                overlay.classList.toggle('active');
+            }
+            
+            function addToCart(e) {
+                const productCard = e.target.closest('.product-card');
+                const productId = productCard.dataset.id;
+                const productName = productCard.querySelector('h3').textContent;
+                const productPrice = parseFloat(productCard.dataset.price);
+                const productImage = productCard.querySelector('img').src;
+                
+                // Check if product already in cart
+                const existingItem = cart.find(item => item.id === productId);
+                
+                if (existingItem) {
+                    existingItem.quantity += 1;
+                } else {
+                    cart.push({
+                        id: productId,
+                        name: productName,
+                        price: productPrice,
+                        image: productImage,
+                        quantity: 1
+                    });
+                }
+                
+                updateCart();
+                toggleCart();
+            }
+            
+            function updateCart() {
+                const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+                document.querySelector('.cart-count').textContent = totalItems;
+                
+                cartItemsContainer.innerHTML = '';
+                
+                if (cart.length === 0) {
+                    cartItemsContainer.innerHTML = '<p>Your cart is empty</p>';
+                    cartTotal.textContent = 'Total: $0.00';
+                    return;
+                }
+                
+                let total = 0;
+                
+                cart.forEach(item => {
+                    const itemTotal = item.price * item.quantity;
+                    total += itemTotal;
+                    
+                    const cartItemElement = document.createElement('div');
+                    cartItemElement.className = 'cart-item';
+                    cartItemElement.innerHTML = `
+                        <img src="${item.image}" alt="${item.name}" class="cart-item-img">
+                        <div class="cart-item-details">
+                            <h4 class="cart-item-title">${item.name}</h4>
+                            <p class="cart-item-price">$${item.price.toFixed(2)} × ${item.quantity}</p>
+                        </div>
+                        <button class="remove-item" data-id="${item.id}">&times;</button>
+                    `;
+                    
+                    cartItemsContainer.appendChild(cartItemElement);
+                    
+                    // Add event listener to remove button
+                    const removeButton = cartItemElement.querySelector('.remove-item');
+                    removeButton.addEventListener('click', removeFromCart);
+                });
+                
+                cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+            }
+            
+            function removeFromCart(e) {
+                const productId = e.target.dataset.id;
+                const itemIndex = cart.findIndex(item => item.id === productId);
+                
+                if (itemIndex !== -1) {
+                    cart.splice(itemIndex, 1);
+                    updateCart();
+                }
+            }
+            
+            function filterProducts() {
+                const categoryFilter = document.getElementById('category').value;
+                const priceFilter = document.getElementById('price').value;
+                const scentFilter = document.getElementById('scent').value;
+                
+                const products = document.querySelectorAll('.product-card');
+                
+                products.forEach(product => {
+                    const productCategory = product.dataset.category;
+                    const productPrice = parseFloat(product.dataset.price);
+                    const productScent = product.dataset.scent;
+                    
+                    let showProduct = true;
+                    
+                    if (categoryFilter !== 'all' && productCategory !== categoryFilter) {
+                        showProduct = false;
+                    }
+                    
+                    if (priceFilter !== 'all') {
+                        if (priceFilter === 'low' && productPrice >= 50) {
+                            showProduct = false;
+                        } else if (priceFilter === 'medium' && (productPrice < 50 || productPrice > 100)) {
+                            showProduct = false;
+                        } else if (priceFilter === 'high' && productPrice <= 100) {
+                            showProduct = false;
+                        }
+                    }
+                    
+                    if (scentFilter !== 'all' && productScent !== scentFilter) {
+                        showProduct = false;
+                    }
+                    
+                    product.style.display = showProduct ? 'block' : 'none';
+                });
+            }
+            
+            function proceedToCheckout() {
+                if (cart.length === 0) {
+                    alert('Your cart is empty!');
+                    return;
+                }
+                
+                alert(`Proceeding to checkout with ${cart.reduce((total, item) => total + item.quantity, 0)} items. Total: $${cart.reduce((total, item) => total + (item.price * item.quantity), 0).toFixed(2)}`);
+            
+                cart.length = 0;
+                updateCart();
+                toggleCart();
+            }
+        });
+    </script>
+</body>
+</html>
